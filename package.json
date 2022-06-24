@@ -1,8 +1,11 @@
 {
   "name": "PuzzleApp",
   "version": "0.0.1",
+  "homepage": "https://alejosanti.github.io/",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
@@ -19,6 +22,7 @@
     "@ionic/vue-router": "^6.0.0",
     "@shopify/draggable": "^1.0.0-beta.8",
     "core-js": "^3.6.5",
+    "gh-pages": "^4.0.0",
     "interactjs": "^1.10.14",
     "jquery": "^3.6.0",
     "vue": "^3.2.21",
